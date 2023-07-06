@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block de notas</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <i class="fa-solid fa-search" id="search"></i><input type="text" id="buscar" class="buscar" placeholder="titulo de nota">
+        <nav>
+            <ul>
+                <li><a href="#nueva-nota">Nueva</a></li>
+                <li><a href="#vistas-nota" id="notas-link">Notas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <sectioin class="nueva-nota" id="nueva-nota">
+            <h1>Nueva nota</h1>
+            <form action="" id="form">
+                <div class="input-container">
+                    <label for="titulo">Titulo</label>
+                    <input type="text" name="titulo" id="titulo" required>
+                </div>
+                <div class="input-container">
+                    <label for="fecha">Fecha</label>
+                    <input type="text" name="fecha" id="fecha" required>
+                </div>
+                <div class="input-container">
+                    <label for="nota">Nota</label>
+                    <textarea name="nota" id="nota" cols="30" rows="10" placeholder="ingrese su nota" required></textarea>
+                </div>
+                <button type="submit" class="submit">Agregar</button>
+            </form>
+        </sectioin>
+
+        <section class="vistas-nota" id="vistas-nota">
+           
+        </section>
+    </main>
+
+    <footer>
+        <div class="info-footer">
+            <p>panchymarin.fm@gmail.com</p>
+        </div>
+        <div class="info-footer">
+            <p>Rivadavia 1960</p>
+        </div>
+        <div class="info-footer">
+            <p>Todoslos derechos reservados</p>
+        </div>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>
